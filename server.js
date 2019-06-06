@@ -17,3 +17,6 @@ app.use(routes);
 // connect to MongoDB
 
 // start the API server
+app.listen(PORT, function(){
+    console.log(`Server listening on PORT ${PORT}`)
+})
