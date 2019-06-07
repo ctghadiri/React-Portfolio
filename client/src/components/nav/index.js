@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 class Nav extends Component {
     render() {
         return (
+            <div>
             <nav>
                 <div class="nav-wrapper">
                     <a href="#!" class="brand-logo">Logo</a>
@@ -22,6 +23,7 @@ class Nav extends Component {
                 <li><a href="collapsible.html">Javascript</a></li>
                 <li><a href="mobile.html">Mobile</a></li>
             </ul>
+        </div>
         )
     }
 
