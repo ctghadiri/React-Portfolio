@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Main from './pages/main';
+import Contact from './pages/contact';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  return (
+  <Router>
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -20,7 +23,11 @@ function App() {
         </a>
       </header>
     </div>
-  );
+    <Switch>
+      <Route exact path="/" component={Main} />  
+      <Route exact path- "/contact" component={Contact} />
+    </Switch>
+    </Router>
 }
 
 export default App;
