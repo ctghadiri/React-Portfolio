@@ -15,7 +15,7 @@ app.use(express.json());
 app.use(routes);
 
 // connect to MongoDB
-// mongoose.connect(process.env.MONGO_URI || "mongodb://localhost/")
+mongoose.connect(process.env.MONGO_URI || "mongodb://localhost/portfolio")
 
 // start the API server
 app.listen(PORT, function(){
