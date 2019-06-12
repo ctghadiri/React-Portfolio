@@ -5,7 +5,7 @@ const emailSchema = new Schema ({
     firstName:{type: String, required: true},
     lastName:{type: String},
     company:{type: String},
-    email:{type: String},
+    email:{type: String, required: true},
     subject:{type: String, required: true},
     body:{type: String, required: true}
 });
